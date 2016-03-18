@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsSheetWindowController">
+            <connections>
+                <outlet property="DnsWinsBox" destination="47" id="553"/>
+                <outlet property="addNamedCredentialsButton" destination="600" id="611"/>
+                <outlet property="alertSoundsBox" destination="791" id="826"/>
+                <outlet property="allConfigurationsUseTheSameCredentialsCheckbox" destination="596" id="612"/>
+                <outlet property="connectingAndDisconnectingTabViewItem" destination="14" id="566"/>
+                <outlet property="connectingHelpButton" destination="352" id="354"/>
+                <outlet property="connectionAlertSoundTFC" destination="807" id="810"/>
+                <outlet property="credentialsGroupArrayController" destination="608" id="609"/>
+                <outlet property="credentialsGroupButton" destination="586" id="610"/>
+                <outlet property="credentialsTabViewItem" destination="584" id="620"/>
+                <outlet property="disconnectOnSleepCheckbox" destination="779" id="782"/>
+                <outlet property="disconnectWhenUserSwitchesOutCheckbox" destination="367" id="453"/>
+                <outlet property="disconnectionAlertSoundTFC" destination="806" id="811"/>
+                <outlet property="dnsServersArrayController" destination="132" id="150"/>
+                <outlet property="dnsServersPopUpButton" destination="51" id="151"/>
+                <outlet property="dnsServersTFC" destination="70" id="152"/>
+                <outlet property="domainArrayController" destination="133" id="153"/>
+                <outlet property="domainPopUpButton" destination="53" id="154"/>
+                <outlet property="domainTFC" destination="71" id="155"/>
+                <outlet property="enableIpv6OnTapCheckbox" destination="1046" id="1048"/>
+                <outlet property="fastUserSwitchingBox" destination="364" id="451"/>
+                <outlet property="flushDnsCacheCheckbox" destination="17" id="121"/>
+                <outlet property="ifConnectedWhenComputerWentToSleepTF" destination="1036" id="1043"/>
+                <outlet property="ifConnectedWhenComputerWentToSleepTFC" destination="1037" id="1044"/>
+                <outlet property="ifConnectedWhenUserSwitchedOutTF" destination="365" id="751"/>
+                <outlet property="ifConnectedWhenUserSwitchedOutTFC" destination="370" id="452"/>
+                <outlet property="keepConnectedCheckbox" destination="1029" id="1031"/>
+                <outlet property="loadTapAlwaysMenuItem" destination="720" id="760"/>
+                <outlet property="loadTapAutomaticallyMenuItem" destination="719" id="761"/>
+                <outlet property="loadTapNeverMenuItem" destination="721" id="767"/>
+                <outlet property="loadTapPopUpButton" destination="716" id="765"/>
+                <outlet property="loadTunAlwaysMenuItem" destination="725" id="757"/>
+                <outlet property="loadTunAutomaticallyMenuItem" destination="726" id="758"/>
+                <outlet property="loadTunNeverMenuItem" destination="724" id="759"/>
+                <outlet property="loadTunPopUpButton" destination="715" id="766"/>
+                <outlet property="monitorNetworkForChangesCheckbox" destination="45" id="148"/>
+                <outlet property="namedCredentialsBox" destination="604" id="614"/>
+                <outlet property="netBiosNameArrayController" destination="136" id="166"/>
+                <outlet property="netBiosNamePopUpButton" destination="77" id="168"/>
+                <outlet property="netBiosNameTFC" destination="95" id="169"/>
+                <outlet property="networkSettingTF" destination="558" id="564"/>
+                <outlet property="networkSettingTFC" destination="559" id="565"/>
+                <outlet property="otherdnsServersArrayController" destination="456" id="462"/>
+                <outlet property="otherdnsServersPopUpButton" destination="377" id="463"/>
+                <outlet property="otherdomainArrayController" destination="457" id="465"/>
+                <outlet property="otherdomainPopUpButton" destination="379" id="466"/>
+                <outlet property="othernetBiosNameArrayController" destination="460" id="468"/>
+                <outlet property="othernetBiosNamePopUpButton" destination="385" id="469"/>
+                <outlet property="othersearchDomainArrayController" destination="458" id="471"/>
+                <outlet property="othersearchDomainPopUpButton" destination="376" id="472"/>
+                <outlet property="otherwinsServersArrayController" destination="459" id="474"/>
+                <outlet property="otherwinsServersPopUpButton" destination="384" id="475"/>
+                <outlet property="otherworkgroupArrayController" destination="461" id="478"/>
+                <outlet property="otherworkgroupPopUpButton" destination="381" id="479"/>
+                <outlet property="prependDomainNameCheckbox" destination="572" id="576"/>
+                <outlet property="reconnectOnWakeFromSleepCheckbox" destination="577" id="582"/>
+                <outlet property="reconnectWhenUserSwitchesInCheckbox" destination="366" id="454"/>
+                <outlet property="removeNamedCredentialsButton" destination="621" id="627"/>
+                <outlet property="runMtuTestCheckbox" destination="774" id="777"/>
+                <outlet property="searchDomainArrayController" destination="134" id="156"/>
+                <outlet property="searchDomainPopUpButton" destination="50" id="157"/>
+                <outlet property="searchDomainTFC" destination="59" id="158"/>
+                <outlet property="settingsSheet" destination="1" id="298"/>
+                <outlet property="sleepWakeBox" destination="1033" id="1045"/>
+                <outlet property="soundOnConnectArrayController" destination="852" id="856"/>
+                <outlet property="soundOnConnectButton" destination="921" id="983"/>
+                <outlet property="soundOnDisconnectArrayController" destination="853" id="857"/>
+                <outlet property="soundOnDisconnectButton" destination="1007" id="1028"/>
+                <outlet property="soundTabViewItem" destination="789" id="822"/>
+                <outlet property="tabView" destination="3" id="118"/>
+                <outlet property="useRouteUpInsteadOfUpCheckbox" destination="784" id="788"/>
+                <outlet property="whenChangesToAnythingElseTF" destination="549" id="554"/>
+                <outlet property="whenChangesToAnythingElseTFC" destination="550" id="551"/>
+                <outlet property="whenChangesToPreVpnValueTF" destination="547" id="555"/>
+                <outlet property="whenChangesToPreVpnValueTFC" destination="548" id="552"/>
+                <outlet property="whileConnectedHelpButton" destination="360" id="362"/>
+                <outlet property="whileConnectedTabViewItem" destination="13" id="568"/>
+                <outlet property="window" destination="1" id="301"/>
+                <outlet property="winsServersArrayController" destination="135" id="160"/>
+                <outlet property="winsServersPopUpButton" destination="76" id="161"/>
+                <outlet property="winsServersTFC" destination="89" id="162"/>
+                <outlet property="workgroupArrayController" destination="137" id="163"/>
+                <outlet property="workgroupPopUpButton" destination="73" id="164"/>
+                <outlet property="workgroupTFC" destination="88" id="165"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Advanced" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" visibleAtLaunch="NO" frameAutosaveName="SettingsSheetWindow" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="434" y="186" width="829" height="502"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="829" height="502"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView id="3">
+                        <rect key="frame" x="13" y="10" width="803" height="486"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Connecting &amp; Disconnecting$" identifier="Item 2" id="14">
+                                <view key="view" id="15">
+                                    <rect key="frame" x="10" y="33" width="783" height="440"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button id="784">
+                                            <rect key="frame" x="15" y="363" width="764" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Set DNS after routes$" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="785">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="useRouteUpInsteadOfUpCheckboxWasClicked:" target="-2" id="787"/>
+                                            </connections>
+                                        </button>
+                                        <button id="17">
+                                            <rect key="frame" x="15" y="403" width="765" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Flush DNS cache after connecting or disconnecting$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="42">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="flushDnsCacheCheckboxWasClicked:" target="-2" id="571"/>
+                                            </connections>
+                                        </button>
+                                        <button id="572">
+                                            <rect key="frame" x="15" y="383" width="765" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Prepend domain name to search domains$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="573">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="prependDomainNameCheckboxWasClicked:" target="-2" id="575"/>
+                                            </connections>
+                                        </button>
+                                        <box autoresizesSubviews="NO" title="Fast User Switching$" borderType="line" id="364">
+                                            <rect key="frame" x="6" y="38" width="771" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" id="NeK-Ty-gzW">
+                                                <rect key="frame" x="1" y="1" width="769" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" id="365">
+                                                        <rect key="frame" x="57" y="14" width="697" height="11"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(If connected when user switched out)$" id="370">
+                                                            <font key="font" metaFont="miniSystem"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <button id="367">
+                                                        <rect key="frame" x="16" y="46" width="737" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <buttonCell key="cell" type="check" title="Disconnect when user switches out$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="368">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="disconnectWhenUserSwitchesOutCheckboxWasClicked:" target="-2" id="372"/>
+                                                            <outlet property="nextKeyView" destination="366" id="371"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button id="366">
+                                                        <rect key="frame" x="16" y="26" width="737" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <buttonCell key="cell" type="check" title="Reconnect when user switches in$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="369">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="reconnectWhenUserSwitchesInCheckboxWasClicked:" target="-2" id="373"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <box autoresizesSubviews="NO" title="Sleep-Wake$" borderType="line" id="1033">
+                                            <rect key="frame" x="6" y="130" width="771" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" id="mhy-wD-s2D">
+                                                <rect key="frame" x="1" y="1" width="769" height="73"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" id="1036">
+                                                        <rect key="frame" x="57" y="14" width="697" height="11"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(If connected when computer went to sleep)$" id="1037">
+                                                            <font key="font" metaFont="miniSystem"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <button id="779">
+                                                        <rect key="frame" x="16" y="47" width="737" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                        <buttonCell key="cell" type="check" title="Disconnect when computer goes to sleep$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="780">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="disconnectOnSleepCheckboxWasClicked:" target="-2" id="783"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button id="577">
+                                                        <rect key="frame" x="16" y="27" width="737" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                        <buttonCell key="cell" type="check" title="Reconnect when computer wakes from sleep$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="578">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="reconnectOnWakeFromSleepCheckboxWasClicked:" target="-2" id="583"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="352">
+                                            <rect key="frame" x="6" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="353">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="connectingHelpButtonWasClicked:" target="-2" id="570"/>
+                                            </connections>
+                                        </button>
+                                        <popUpButton verticalHuggingPriority="750" id="715">
+                                            <rect key="frame" x="6" y="274" width="313" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Load Tun automatically$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="726" id="722">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <menu key="menu" title="OtherViews" id="723">
+                                                    <items>
+                                                        <menuItem title="Load Tun automatically$" state="on" id="726">
+                                                            <connections>
+                                                                <action selector="loadTunAutomaticallyMenuItemWasClicked:" target="-2" id="769"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                        <menuItem title="Always load Tun$" id="725">
+                                                            <connections>
+                                                                <action selector="loadTunAlwaysMenuItemWasClicked:" target="-2" id="768"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                        <menuItem title="Never load Tun$" id="724">
+                                                            <connections>
+                                                                <action selector="loadTunNeverMenuItemWasClicked:" target="-2" id="770"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <outlet property="nextKeyView" destination="53" id="735"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <popUpButton verticalHuggingPriority="750" id="716">
+                                            <rect key="frame" x="6" y="243" width="313" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" title="Load Tap automatically$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="719" id="717">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <menu key="menu" title="OtherViews" id="718">
+                                                    <items>
+                                                        <menuItem title="Load Tap automatically$" state="on" id="719">
+                                                            <connections>
+                                                                <action selector="loadTapAutomaticallyMenuItemWasClicked:" target="-2" id="772"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                        <menuItem title="Always load Tap$" id="720">
+                                                            <connections>
+                                                                <action selector="loadTapAlwaysMenuItemWasClicked:" target="-2" id="771"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                        <menuItem title="Never load Tap$" id="721">
+                                                            <connections>
+                                                                <action selector="loadTapNeverMenuItemWasClicked:" target="-2" id="773"/>
+                                                            </connections>
+                                                        </menuItem>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <outlet property="nextKeyView" destination="53" id="736"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <button id="1029">
+                                            <rect key="frame" x="15" y="323" width="764" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Keep connected$" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1030">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="keepConnectedCheckboxWasClicked:" target="-2" id="1032"/>
+                                            </connections>
+                                        </button>
+                                        <button id="1046">
+                                            <rect key="frame" x="15" y="343" width="764" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="EnableIPv6 for tap$" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1047">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="enableIpv6OnTapCheckboxWasClicked:" target="-2" id="1049"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="While Connected$" identifier="Item 3" id="13">
+                                <view key="view" id="44">
+                                    <rect key="frame" x="10" y="33" width="783" height="440"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button id="45">
+                                            <rect key="frame" x="15" y="349" width="761" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Monitor network settings$" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="96">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="monitorNetworkForChangesCheckboxWasClicked:" target="-2" id="189"/>
+                                                <outlet property="nextKeyView" destination="51" id="341"/>
+                                            </connections>
+                                        </button>
+                                        <box autoresizesSubviews="NO" borderType="line" titlePosition="noTitle" id="47">
+                                            <rect key="frame" x="6" y="145" width="771" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" id="Nf7-71-sFI">
+                                                <rect key="frame" x="1" y="1" width="769" height="198"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" id="48">
+                                                        <rect key="frame" x="15" y="120" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Domain$:" id="71">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" id="49">
+                                                        <rect key="frame" x="15" y="146" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="DNS servers$:" id="70">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <popUpButton verticalHuggingPriority="750" id="50">
+                                                        <rect key="frame" x="213" y="88" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="68" id="65">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="66">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="69"/>
+                                                                    <menuItem title="Restore$" state="on" id="68"/>
+                                                                    <menuItem title="Restart connection$" id="67"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="134" name="content" keyPath="arrangedObjects" id="238"/>
+                                                            <binding destination="134" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="238" id="242"/>
+                                                            <binding destination="134" name="contentValues" keyPath="arrangedObjects.name" previousBinding="242" id="244"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedSearchDomainIndex" previousBinding="244" id="247"/>
+                                                            <outlet property="nextKeyView" destination="76" id="344"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="51">
+                                                        <rect key="frame" x="213" y="140" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="63" id="60">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="61">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="64"/>
+                                                                    <menuItem title="Restore$" state="on" id="63"/>
+                                                                    <menuItem title="Restart connection$" id="62"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="132" name="content" keyPath="arrangedObjects" id="218"/>
+                                                            <binding destination="132" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="218" id="221"/>
+                                                            <binding destination="132" name="contentValues" keyPath="arrangedObjects.name" previousBinding="221" id="223"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedDnsServersIndex" previousBinding="223" id="226"/>
+                                                            <outlet property="nextKeyView" destination="53" id="342"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <textField verticalHuggingPriority="750" id="52">
+                                                        <rect key="frame" x="15" y="94" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Search domain$" id="59">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <popUpButton verticalHuggingPriority="750" id="53">
+                                                        <rect key="frame" x="213" y="114" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="57" id="54">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="55">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="56"/>
+                                                                    <menuItem title="Restore$" state="on" id="57"/>
+                                                                    <menuItem title="Restart connection$" id="58"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="133" name="content" keyPath="arrangedObjects" id="228"/>
+                                                            <binding destination="133" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="228" id="231"/>
+                                                            <binding destination="133" name="contentValues" keyPath="arrangedObjects.name" previousBinding="231" id="233"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedDomainIndex" previousBinding="233" id="236"/>
+                                                            <outlet property="nextKeyView" destination="50" id="343"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <textField verticalHuggingPriority="750" id="72">
+                                                        <rect key="frame" x="15" y="42" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="NetBIOS name$:" id="95">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <popUpButton verticalHuggingPriority="750" id="73">
+                                                        <rect key="frame" x="213" y="10" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="93" id="90">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="91">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="92"/>
+                                                                    <menuItem title="Restore$" state="on" id="93"/>
+                                                                    <menuItem title="Restart connection$" id="94"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="137" name="content" keyPath="arrangedObjects" id="268"/>
+                                                            <binding destination="137" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="268" id="271"/>
+                                                            <binding destination="137" name="contentValues" keyPath="arrangedObjects.name" previousBinding="271" id="273"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedWorkgroupIndex" previousBinding="273" id="276"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <textField verticalHuggingPriority="750" id="74">
+                                                        <rect key="frame" x="15" y="68" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="WINS Servers$:" id="89">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" id="75">
+                                                        <rect key="frame" x="15" y="16" width="189" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Workgroup$:" id="88">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <popUpButton verticalHuggingPriority="750" id="76">
+                                                        <rect key="frame" x="213" y="62" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="86" id="83">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="84">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="85"/>
+                                                                    <menuItem title="Restore$" state="on" id="86"/>
+                                                                    <menuItem title="Restart connection$" id="87"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="135" name="content" keyPath="arrangedObjects" id="249"/>
+                                                            <binding destination="135" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="249" id="252"/>
+                                                            <binding destination="135" name="contentValues" keyPath="arrangedObjects.name" previousBinding="252" id="254"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedWinsServersIndex" previousBinding="254" id="257"/>
+                                                            <outlet property="nextKeyView" destination="77" id="345"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="77">
+                                                        <rect key="frame" x="213" y="36" width="298" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restore$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="81" id="78">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="79">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="82"/>
+                                                                    <menuItem title="Restore$" state="on" id="81"/>
+                                                                    <menuItem title="Restart connection$" id="80"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="136" name="content" keyPath="arrangedObjects" id="259"/>
+                                                            <binding destination="136" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="259" id="262"/>
+                                                            <binding destination="136" name="contentValues" keyPath="arrangedObjects.name" previousBinding="262" id="264"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedNetBiosNameIndex" previousBinding="264" id="267"/>
+                                                            <outlet property="nextKeyView" destination="73" id="347"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="377">
+                                                        <rect key="frame" x="513" y="140" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="414" id="410">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="411">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="412"/>
+                                                                    <menuItem title="Restore$" id="413"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="414"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="456" name="content" keyPath="arrangedObjects" id="485"/>
+                                                            <binding destination="456" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="485" id="489"/>
+                                                            <binding destination="456" name="contentValues" keyPath="arrangedObjects.name" previousBinding="489" id="492"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOtherdnsServersIndex" previousBinding="492" id="494"/>
+                                                            <outlet property="nextKeyView" destination="379" id="422"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="379">
+                                                        <rect key="frame" x="513" y="114" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="406" id="404">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="405">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="408"/>
+                                                                    <menuItem title="Restore$" id="407"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="406"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="457" name="content" keyPath="arrangedObjects" id="501"/>
+                                                            <binding destination="457" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="501" id="502"/>
+                                                            <binding destination="457" name="contentValues" keyPath="arrangedObjects.name" previousBinding="502" id="503"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOtherdomainIndex" previousBinding="503" id="505"/>
+                                                            <outlet property="nextKeyView" destination="376" id="423"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="376">
+                                                        <rect key="frame" x="513" y="88" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="419" id="415">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="416">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="417"/>
+                                                                    <menuItem title="Restore$" id="418"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="419"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="458" name="content" keyPath="arrangedObjects" id="512"/>
+                                                            <binding destination="458" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="512" id="513"/>
+                                                            <binding destination="458" name="contentValues" keyPath="arrangedObjects.name" previousBinding="513" id="514"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOthersearchDomainIndex" previousBinding="514" id="515"/>
+                                                            <outlet property="nextKeyView" destination="384" id="424"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="384">
+                                                        <rect key="frame" x="513" y="62" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="395" id="391">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="392">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="393"/>
+                                                                    <menuItem title="Restore$" id="394"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="395"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="459" name="content" keyPath="arrangedObjects" id="522"/>
+                                                            <binding destination="459" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="522" id="523"/>
+                                                            <binding destination="459" name="contentValues" keyPath="arrangedObjects.name" previousBinding="523" id="524"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOtherwinsServersIndex" previousBinding="524" id="525"/>
+                                                            <outlet property="nextKeyView" destination="385" id="425"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="385">
+                                                        <rect key="frame" x="513" y="36" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="388" id="386">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="387">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="390"/>
+                                                                    <menuItem title="Restore$" id="389"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="388"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="460" name="content" keyPath="arrangedObjects" id="532"/>
+                                                            <binding destination="460" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="532" id="533"/>
+                                                            <binding destination="460" name="contentValues" keyPath="arrangedObjects.name" previousBinding="533" id="534"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOthernetBiosNameIndex" previousBinding="534" id="546"/>
+                                                            <outlet property="nextKeyView" destination="381" id="426"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="381">
+                                                        <rect key="frame" x="513" y="10" width="241" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Restart connection$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="402" id="398">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="399">
+                                                                <items>
+                                                                    <menuItem title="Ignore$" id="400"/>
+                                                                    <menuItem title="Restore$" id="401"/>
+                                                                    <menuItem title="Restart connection$" state="on" id="402"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="461" name="content" keyPath="arrangedObjects" id="542"/>
+                                                            <binding destination="461" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="542" id="543"/>
+                                                            <binding destination="461" name="contentValues" keyPath="arrangedObjects.name" previousBinding="543" id="544"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedOtherworkgroupIndex" previousBinding="544" id="545"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <textField verticalHuggingPriority="750" id="547">
+                                                        <rect key="frame" x="217" y="172" width="294" height="14"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="When changes to pre-VPN value" id="548">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" id="558">
+                                                        <rect key="frame" x="15" y="172" width="189" height="14"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Network setting" id="559">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" id="549">
+                                                        <rect key="frame" x="513" y="172" width="257" height="14"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="When changes to anything else" id="550">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="360">
+                                            <rect key="frame" x="6" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="361">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="whileConnectedHelpButtonWasClicked:" target="-2" id="659"/>
+                                            </connections>
+                                        </button>
+                                        <button id="774">
+                                            <rect key="frame" x="15" y="403" width="761" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Run MTU test$" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="775">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="runMtuTestCheckboxWasClicked:" target="-2" id="778"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="VPN Credentials$" identifier="Item 2" id="584">
+                                <view key="view" id="585">
+                                    <rect key="frame" x="10" y="33" width="783" height="440"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button id="596">
+                                            <rect key="frame" x="14" y="414" width="744" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="All configurations$" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="597">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="allConfigurationsUseTheSameCredentialsCheckboxWasClicked:" target="-2" id="619"/>
+                                            </connections>
+                                        </button>
+                                        <box autoresizesSubviews="NO" title="Named credentials$" borderType="line" id="604">
+                                            <rect key="frame" x="6" y="145" width="755" height="240"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" id="5Da-nj-yyi">
+                                                <rect key="frame" x="1" y="1" width="753" height="224"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" id="600">
+                                                        <rect key="frame" x="454" y="69" width="287" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <buttonCell key="cell" type="push" title="Add credentials…$" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="601">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="addNamedCredentialsButtonWasClicked:" target="-2" id="618"/>
+                                                        </connections>
+                                                    </button>
+                                                    <popUpButton verticalHuggingPriority="750" id="586">
+                                                        <rect key="frame" x="15" y="185" width="608" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="This configuration uses separate credentials$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="589" id="587">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="588">
+                                                                <items>
+                                                                    <menuItem title="This configuration uses separate credentials$" state="on" id="589"/>
+                                                                    <menuItem title="This configuration uses XXX credentials$" id="590"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="608" name="content" keyPath="arrangedObjects" id="629"/>
+                                                            <binding destination="608" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="629" id="649"/>
+                                                            <binding destination="608" name="contentValues" keyPath="arrangedObjects.name" previousBinding="649" id="650"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedCredentialsGroupIndex" previousBinding="650" id="651"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="621">
+                                                        <rect key="frame" x="15" y="73" width="383" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="Remove credentials$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="624" id="622">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="623">
+                                                                <items>
+                                                                    <menuItem title="Remove credentials$" state="on" hidden="YES" id="624"/>
+                                                                    <menuItem title="Item 2" id="625"/>
+                                                                    <menuItem title="Item 3" id="626"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                    </popUpButton>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="605">
+                                            <rect key="frame" x="6" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="606">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="vpnCredentialsHelpButtonWasClicked:" target="-2" id="658"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Sounds$" identifier="Item 3" id="789">
+                                <view key="view" id="790">
+                                    <rect key="frame" x="10" y="33" width="783" height="440"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <box autoresizesSubviews="NO" title="Alert Sounds$" borderType="line" id="791">
+                                            <rect key="frame" x="6" y="335" width="771" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <view key="contentView" id="mtv-IJ-R5c">
+                                                <rect key="frame" x="1" y="1" width="769" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" id="792">
+                                                        <rect key="frame" x="9" y="46" width="261" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connection$:" id="807">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <popUpButton verticalHuggingPriority="750" id="921">
+                                                        <rect key="frame" x="277" y="39" width="203" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="ConnectSound$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="926" id="922">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="923">
+                                                                <items>
+                                                                    <menuItem title="ConnectSound$" state="on" id="926"/>
+                                                                    <menuItem title="Glass$" id="925"/>
+                                                                    <menuItem title="Basso$" id="924"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="852" name="content" keyPath="arrangedObjects" id="950"/>
+                                                            <binding destination="852" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="950" id="959"/>
+                                                            <binding destination="852" name="contentValues" keyPath="arrangedObjects.name" previousBinding="959" id="962"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedSoundOnConnectIndex" previousBinding="962" id="986"/>
+                                                            <outlet property="nextKeyView" destination="858" id="931"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <popUpButton verticalHuggingPriority="750" id="1007">
+                                                        <rect key="frame" x="277" y="10" width="203" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <popUpButtonCell key="cell" type="push" title="DisconnectSound$" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="1010" id="1008">
+                                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <menu key="menu" title="OtherViews" id="1009">
+                                                                <items>
+                                                                    <menuItem title="DisconnectSound$" state="on" id="1010"/>
+                                                                    <menuItem title="Glass$" id="1011"/>
+                                                                    <menuItem title="Basso$" id="1012"/>
+                                                                </items>
+                                                            </menu>
+                                                        </popUpButtonCell>
+                                                        <connections>
+                                                            <binding destination="853" name="content" keyPath="arrangedObjects" id="1021"/>
+                                                            <binding destination="853" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="1021" id="1022"/>
+                                                            <binding destination="853" name="contentValues" keyPath="arrangedObjects.name" previousBinding="1022" id="1025"/>
+                                                            <binding destination="-2" name="selectedIndex" keyPath="selectedSoundOnDisconnectIndex" previousBinding="1025" id="1027"/>
+                                                            <outlet property="nextKeyView" destination="858" id="1017"/>
+                                                        </connections>
+                                                    </popUpButton>
+                                                    <textField verticalHuggingPriority="750" id="793">
+                                                        <rect key="frame" x="14" y="16" width="261" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Unexpected disconnection$:" id="806">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="858">
+                                            <rect key="frame" x="6" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="859">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="vpnCredentialsHelpButtonWasClicked:" target="-2" id="860"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="302"/>
+            </connections>
+        </window>
+        <arrayController id="740" userLabel="loadTun Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="739" userLabel="loadTap Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="132" userLabel="dnsServers Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="133" userLabel="domain Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="134" userLabel="searchDomain Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="135" userLabel="winsServers Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="136" userLabel="netBiosNameArray Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="137" userLabel="workgroup Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+                <string>selectedSoundOnConnectIndex</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="456" userLabel="otherdnsServers Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="457" userLabel="otherdomain Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="458" userLabel="othersearchDomain Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="459" userLabel="otherwinsServers Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="460" userLabel="othernetBiosNameArray Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="461" userLabel="otherworkgroup Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="608" userLabel="credentialsGroup Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="852" userLabel="soundOnConnect Array Controller">
+            <declaredKeys>
+                <string>name</string>
+                <string>value</string>
+            </declaredKeys>
+        </arrayController>
+        <arrayController id="853" userLabel="SoundOnDisconnect Array Controller">
+            <declaredKeys>
+                <string>value</string>
+                <string>name</string>
+            </declaredKeys>
+        </arrayController>
+    </objects>
+</document>

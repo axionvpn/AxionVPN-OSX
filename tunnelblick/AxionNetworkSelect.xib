@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AxionNetworkSelect">
+            <connections>
+                <outlet property="NetworkView" destination="8hb-io-tdg" id="qIC-am-udn"/>
+                <outlet property="window" destination="pOh-Ah-Py2" id="n1A-Bu-c9Q"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="AxionVPN" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="pOh-Ah-Py2">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="283" y="305" width="382" height="551"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="8hb-io-tdg" customClass="AxionNetworkView">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="551"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JgB-ki-f0u">
+                        <rect key="frame" x="289" y="534" width="87" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version x.x.x" id="tBs-Qk-jqq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yun-s9-Qkk" userLabel="Axion Banner">
+                        <rect key="frame" x="-14" y="405" width="410" height="126"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="axion_type_logo" id="FG4-XT-tFr"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipA-Fy-Fd1">
+                        <rect key="frame" x="30" y="6" width="167" height="21"/>
+                        <buttonCell key="cell" type="bevel" title="Get AxionVPN Account" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="5b0-uu-C6Q">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="getAxionAcccount:" target="8hb-io-tdg" id="9FX-OI-W1G"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffI-Dk-Hnp">
+                        <rect key="frame" x="193" y="8" width="38" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="|" id="L1m-Oj-JRf">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMy-AD-gVL">
+                        <rect key="frame" x="205" y="6" width="125" height="21"/>
+                        <buttonCell key="cell" type="bevel" title="Forgot Password" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="o0d-jG-SGs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="forgotPassWord:" target="8hb-io-tdg" id="Y4j-ww-cPR"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6h-zx-pKC" customClass="NSSecureTextField">
+                        <rect key="frame" x="50" y="288" width="278" height="28"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="N9E-by-IIr">
+                            <font key="font" size="14" name=".HelveticaNeueDeskInterface-Regular"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-Qb-Tc3">
+                        <rect key="frame" x="48" y="384" width="183" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username or Email" id="te1-kS-w8b">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Zg-rT-cvY">
+                        <rect key="frame" x="48" y="317" width="183" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="t4i-2C-QSB">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evf-u7-5F3">
+                        <rect key="frame" x="48" y="253" width="137" height="18"/>
+                        <buttonCell key="cell" type="check" title="Save to Keychain" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Kte-JR-vhY">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njf-R9-KVC">
+                        <rect key="frame" x="88" y="105" width="192" height="32"/>
+                        <buttonCell key="cell" type="push" title="Connect" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qJn-p3-B1p">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="connectButtonPressed:" target="8hb-io-tdg" id="cSs-WI-93F"/>
+                        </connections>
+                    </button>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGN-FN-Ve6">
+                        <rect key="frame" x="50" y="188" width="281" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="8" id="3oJ-k3-4jh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <outlet property="dataSource" destination="8hb-io-tdg" id="HbO-ab-4cu"/>
+                            <outlet property="delegate" destination="8hb-io-tdg" id="kfE-bP-2hD"/>
+                        </connections>
+                    </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mel-vs-Kb0">
+                        <rect key="frame" x="48" y="220" width="183" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Location" id="IEi-HY-3nL">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-2y-pmw">
+                        <rect key="frame" x="48" y="156" width="282" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Invalid Username or Password" id="JBP-X3-ytL">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.69316208960000003" green="0.038954157119999999" blue="0.18510613670000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-fm-wcb">
+                        <rect key="frame" x="50" y="354" width="278" height="28"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qjD-tx-1TH">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <connections>
+                    <outlet property="BadCredsMsg" destination="wTu-2y-pmw" id="w8t-At-ImQ"/>
+                    <outlet property="VPNList" destination="VGN-FN-Ve6" id="GvS-sK-lFJ"/>
+                    <outlet property="connectButton" destination="njf-R9-KVC" id="Cih-SD-fia"/>
+                    <outlet property="passwordField" destination="T6h-zx-pKC" id="V0b-eg-vtW"/>
+                    <outlet property="saveCredsInKeychainCheckbox" destination="evf-u7-5F3" id="dpg-bf-NXq"/>
+                    <outlet property="usernameField" destination="eM8-fm-wcb" id="f8f-c9-bhA"/>
+                    <outlet property="versionField" destination="JgB-ki-f0u" id="vPj-1e-CST"/>
+                </connections>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="8hb-io-tdg" id="5Wd-nb-Vdc"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="385.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="axion_type_logo" width="500" height="150"/>
+    </resources>
+</document>
